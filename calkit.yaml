@@ -1,8 +1,8 @@
-owner: calkit
-name: example-basic
+owner: abachant
+name: example-calkit-basic
 title: Basic Calkit example
 description: A basic Calkit exmple project.
-git_repo_url: https://github.com/calkit/example-basic
+git_repo_url: https://github.com/abachant/example-calkit-basic
 dependencies:
   - docker
   - mamba

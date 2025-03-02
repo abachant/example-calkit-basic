@@ -14,15 +14,15 @@ stages:
     outs:
     - path: data/raw/data.csv
       hash: md5
-      md5: 2ba6a2254202b7055d370eb59a35dfae
-      size: 43644
+      md5: 5e1f4fef5f12168fb71bc7da44dc06f4
+      size: 43617
   plot-voltage:
     cmd: calkit xenv -n py -- python scripts/plot-voltage.py
     deps:
     - path: data/raw/data.csv
       hash: md5
-      md5: 2ba6a2254202b7055d370eb59a35dfae
-      size: 43644
+      md5: 5e1f4fef5f12168fb71bc7da44dc06f4
+      size: 43617
     - path: environment.yml
       hash: md5
       md5: 627d0116e60eab837fbf07edb4d370e0
@@ -34,8 +34,8 @@ stages:
     outs:
     - path: figures/voltage-time-series.png
       hash: md5
-      md5: d4cd33821c032be468a77d65873937bc
-      size: 43613
+      md5: 5b9f6e796d0aeea8eb9636c361a85481
+      size: 45273
   copy-figures-to-paper-dir:
     cmd: cp -r figures paper/figures
     deps:
@@ -55,8 +55,8 @@ stages:
     deps:
     - path: figures
       hash: md5
-      md5: 1a9009ee25ecfe1fbfe1916de2eb7deb.dir
-      size: 43638
+      md5: f9f9661e3d998c041ca71eac8dbc5de9.dir
+      size: 45298
       nfiles: 2
     - path: paper/paper.tex
       hash: md5
@@ -65,5 +65,5 @@ stages:
     outs:
     - path: paper/paper.pdf
       hash: md5
-      md5: 272ef20d54a4c536be5a92693164a735
-      size: 92833
+      md5: ed5e13a52351dc0ceec9c79c61a66e65
+      size: 95166
