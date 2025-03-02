@@ -1,5 +1,8 @@
 [core]
-    remote = calkit
+    remote = calkit-local
 ['remote "calkit"']
     url = https://api.calkit.io/projects/calkit/example-basic/dvc
+    auth = custom
+['remote "calkit-local"']
+    url = http://api.localhost/projects/calkit/example-basic/dvc
     auth = custom
